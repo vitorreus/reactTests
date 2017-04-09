@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import _ from 'underscore';
 
 class Clickme extends Component {
     constructor(props){
@@ -7,6 +8,8 @@ class Clickme extends Component {
             clicked:0
         };
         //this.click = this.click.bind(this);
+
+        console.log(_([1,2,3]).map((x) => x*x))
 
     }
     click = () => {
